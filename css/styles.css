@@ -1,0 +1,205 @@
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(to right, rgb(174, 205, 76), rgb(242, 131, 129));
+}
+
+header,
+footer,
+.banner,
+section {
+    background-color: #f7f7f7;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+header,
+footer {
+    background: rgba(255, 252, 252, 0.5);
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border-radius: 10px;
+}
+
+header {
+    padding: 20px 0;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.center {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.logo {
+    text-align: center;
+}
+
+.logo img {
+    max-width: 150px;
+    height: auto;
+}
+
+nav {
+    text-align: center;
+}
+
+nav ul {
+    list-style: none;
+}
+
+nav ul li {
+    display: inline-block;
+    margin: 0 10px;
+}
+
+nav ul li a {
+    color: #7b2d5f;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 5px 10px;
+    border-radius: 5px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+nav ul li a:hover {
+    background-color: #d7156e;
+    color: #fff;
+}
+
+main {
+    padding: 20px 0;
+}
+
+section {
+    margin-bottom: 40px;
+}
+
+section h2 {
+    font-size: 2em;
+    color: #7b2d5f;
+    margin-bottom: 20px;
+}
+
+section p {
+    font-size: 1.1em;
+    line-height: 1.6;
+}
+
+.banner {
+    text-align: center;
+}
+
+.banner img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+
+footer {
+    padding: 40px 0;
+    text-align: center;
+    box-shadow: 0 -2px 4px rgba(0, 0, 0, 0.1);
+}
+
+footer h2 {
+    font-size: 1.5em;
+    color: #7b2d5f;
+    margin-bottom: 20px;
+}
+
+.redes-sociais,
+.contato-info {
+    margin-bottom: 20px;
+}
+
+.redes-lista,
+.contato-lista {
+    list-style: none;
+    padding: 0;
+}
+
+.redes-lista li,
+.contato-lista li {
+    display: inline-block;
+    margin: 0 10px;
+}
+
+.redes-lista li a img {
+    width: 40px;
+    height: 40px;
+    transition: transform 0.3s ease;
+}
+
+.redes-lista li a img:hover {
+    transform: scale(1.1);
+}
+
+.contato-lista li a,
+.form-group input[type="text"],
+.form-group input[type="email"],
+.form-group input[type="tel"],
+.form-group textarea {
+    color: #7b2d5f;
+    border: 1px solid #d7156e;
+    border-radius: 5px;
+    font-size: 1em;
+}
+
+.contato-lista li a:hover {
+    color: #d7156e;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.form-group input[type="text"],
+.form-group input[type="email"],
+.form-group input[type="tel"],
+.form-group textarea {
+    width: 100%;
+    padding: 10px;
+}
+
+.form-group textarea {
+    resize: vertical;
+}
+
+button[type="submit"] {
+    background-color: #d7156e;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1.1em;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button[type="submit"]:hover {
+    background-color: #7b2d5f;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    grid-gap: 20px;
+    padding: 20px;
+}
